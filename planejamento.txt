@@ -1,5 +1,7 @@
 #Iniciar projeto em Django
 #django-admin startproect nome-do-projeto .
+#django-admin startapp video
+
 
 - Homepage
 - Fazer login e criar conta (usuário e autenticação)
