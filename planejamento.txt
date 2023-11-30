@@ -1,0 +1,23 @@
+#Iniciar projeto em Django
+#django-admin startproect nome-do-projeto .
+
+- Homepage
+- Fazer login e criar conta (usuário e autenticação)
+    - Email
+    - Username
+    - Senha
+    - Vídeos já assistidos
+    - Editar perfil
+
+- Vídeos/Série
+    - thumb
+    - Título
+    - Descrição
+    - Categoria
+    - Data de criação
+    - Duantidade de views
+    - Episódios
+        - Vídeos
+        - Título
+
+- Barra de pesquisa
