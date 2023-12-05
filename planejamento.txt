@@ -19,7 +19,8 @@
     - Data de criação
     - Duantidade de views
     - Episódios
-        - Vídeos
+        - Vídeos (link do vídeo)
         - Título
+
 
 - Barra de pesquisa
