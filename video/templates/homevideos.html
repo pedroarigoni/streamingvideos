@@ -10,7 +10,7 @@ Homevideos VideoFlix
     <h1>Home de Videos - Confira!</h1>
     {% for filme in object_list %}
     <hr>
-    <p>{{ filme }}</p>
+    <a href="{% url 'video:detalhesvideos' filme.pk %}"><p>{{ filme }}</p></a>
     <p>{{ filme.descricao }}</p>
     <img class="w-1/2 h-auto mx-auto my-auto" src="{{ filme.thumb.url }}">
     {% endfor %}
