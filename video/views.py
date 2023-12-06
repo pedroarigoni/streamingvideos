@@ -14,3 +14,9 @@ class HomeVideos(ListView):
 class DetalhesVideos(DetailView):
     template_name = "detalhesvideo.html"
     model = Filme
+
+    def get_context_data(self, **kwargs):
+        context = super(DetalhesVideos, self).get_context_data(**kwargs)
+        videos_relacionados = Filme.objects.filter(categoria=self.get_object().categoria)[0:5]
+        context["videos_relacionados"] = videos_relacionados
+        return context

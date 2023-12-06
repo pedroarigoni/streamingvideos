@@ -20,4 +20,15 @@ Detalhesvideos VideoFlix
 
 </div>
 
+<div class="py-28">
+    <h2>Vídeos relacionados:</h2>
+    {% for video in videos_relacionados %}
+    <p>
+        <a href="{% url 'video:detalhesvideos' filme.pk %}">
+            {{ video.titulo }}
+        </a>
+    </p>
+    {% endfor %}
+</div>
+
 {% endblock %}>
