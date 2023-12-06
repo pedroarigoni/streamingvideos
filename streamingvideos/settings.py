@@ -64,7 +64,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'video.new_context.lista_videos_recentes',
-                'video.new_context.lista_mais_vistos',
+                'video.new_context.lista_mais_assistidos',
             ],
         },
     },
