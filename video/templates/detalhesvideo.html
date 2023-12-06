@@ -10,6 +10,14 @@ Detalhesvideos VideoFlix
     <h1>Detalhes do vídeo: {{ object.titulo }}</h1>
     <p>{{ object.descricao }}</p>
     <img class="w-1/2 h-auto mx-auto my-auto" src="{{ object.thumb.url }}">
+
+    <h2>Episódios:</h2>
+    {% for episodio in object.episodios.all %}
+    <a href="{{ episodio.video }}">
+        <p>{{ forloop.counter }}: {{ episodio.titulo }}</p>
+    </a>
+    {% endfor %}
+
 </div>
 
 {% endblock %}>
