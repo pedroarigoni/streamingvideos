@@ -1,10 +1,13 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import AbstractUser
 
 LISTA_CATEGORIAS = (
     ("HUMOR", "Humor"),
     ("ACAO", "Ação"),
     ("CIENCIA", "Ciência"),
+    ("HORROR", "Horror"),
+    ("FANTASIA", "Fantasia"),
     ("OUTROS", "Outros"),
 )
 class Filme(models.Model):
@@ -28,3 +31,6 @@ class Episodio(models.Model):
 
     def __str__(self):
         return self.filme.titulo + ' - ' + self.titulo
+
+class Usuario(AbstractUser):
+    filmes_vistos = models.ManyToManyField("Filme")
