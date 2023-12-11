@@ -6,14 +6,24 @@
             <img class="w-2/12" src="{% static 'images/video_flix_logo.jpg' %}">
         </a>
     </div>
-
     <div class="w-6/12 flex flex-nowrap justify-end">
+        {% if user.is_authenticated %}
         <div class="mr-2">
             <form method="get" action="{% url 'video:pesquisavideo' %}">
                 <input type="text" class="py-1 px-2 rounded-md text-black" name="query" value="{{ request.GET.query }}" placeholder="Pesquisar...">
                 <input type="submit" value="">
             </form>
         </div>
+        {% endif %}
+        {% if user.is_authenticated %}
+        <div class="mr-2">
+            <a href="#">
+                <button class="bg-red-600 text-white py-1 px-3 rounded-md">
+                    Logout
+                </button>
+            </a>
+        </div>
+        {% else %}
         <div class="mr-2">
             <a href="#">
                 <button class="bg-red-600 text-white py-1 px-3 rounded-md">
@@ -21,6 +31,8 @@
                 </button>
             </a>
         </div>
+        {% endif %}
+        {% if user.is_authenticated %}
         <div class="mr-2">
             <a href="#">
                 <button class="bg-red-600 text-white py-1 px-3 rounded-md">
@@ -28,5 +40,7 @@
                 </button>
             </a>
         </div>
+        {% endif %}
     </div>
+
 </nav>
