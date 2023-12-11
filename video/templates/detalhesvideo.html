@@ -4,12 +4,28 @@
 Detalhesvideos VideoFlix
 {% endblock %}
 
+{% block head %}
+<style>
+    .outlined-text {
+            font-size: 6xl;
+            font-weight: bold;
+            color: white;
+            margin: 4px 0;
+            -webkit-text-stroke: 2px black; /* Adiciona uma borda preta ao texto */
+            text-stroke: 2px black; /* Adiciona uma borda preta ao texto */
+    }
+    .custom-button {
+        border: 2px solid black; /* Adiciona uma borda preta ao botão */
+    }
+ </style>
+{% endblock %}
+
 {% block content %}
 
 <main class='bg-primary_black min-h-screen w-full'>
     <section class="h-screen relative bg-no-repeat pb-8 pl-6 flex  items-end bg-cover" style="background-image: url('{{ object.thumb.url }}');">
         <div>
-            <h2 class="text-6xl font-semibold text-white my-4">
+            <h2 class="text-6xl font-semibold text-white outlined-text my-4">
                 {{ object.titulo }}
             </h2>
             <p class=" w-11/12 md:w-5/12 font-medium text-white my-4">
@@ -17,7 +33,7 @@ Detalhesvideos VideoFlix
             </p>
             <div class="flex my-4">
                 <a href="{{ object.episodios.first.video }}">
-                    <button class="flex items-center bg-white py-2 px-5 rounded-md" style='color:black;'>
+                    <button class="flex items-center bg-white py-2 px-5 rounded-md custom-button" style='color:black;'>
                         <ion-icon name="play" class="text-2xl"></ion-icon>
                         <span class="ml-3 font-medium">
                             Play
@@ -64,9 +80,10 @@ Detalhesvideos VideoFlix
             <div class="flex flex-wrap items-center min-w-full movie_lis">
                 {% for video in videos_relacionados %}
                 <div class="m-4 bg-blue-500 overflow-hidden flex-shrink-0 rounded-md cursor-pointer h-64 w-96">
-                    <a href="{% url 'video:detalhesvideos' filme.pk %}">
-                            <img src="{{ filme.thumb.url }}" class="object-cover w-full h-full " alt="">
+                    <a href="{% url 'video:detalhesvideos' video.pk %}">
+                            <img src="{{ video.thumb.url }}" class="object-cover w-full h-full " alt="">
                     </a>
+
                 </div>
                 {% endfor %}
             </div>

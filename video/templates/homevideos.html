@@ -79,6 +79,17 @@ Homevideos VideoFlix
         display:none;
       }
 }
+    .outlined-text {
+        font-size: 6xl;
+        font-weight: bold;
+        color: white;
+        margin: 4px 0;
+        -webkit-text-stroke: 2px black; /* Adiciona uma borda preta ao texto */
+        text-stroke: 2px black; /* Adiciona uma borda preta ao texto */
+    }
+    .custom-button {
+        border: 2px solid black; /* Adiciona uma borda preta ao botão */
+    }
 </style>
 {% endblock %}
 
@@ -88,7 +99,7 @@ Homevideos VideoFlix
 <main class='bg-primary_black min-h-screen w-full'>
     <section class="h-screen relative bg-no-repeat pb-8 pl-6 flex items-end bg-cover" style="background-image: url('{{ video_destaque.thumb.url }}');">
         <div>
-            <h2 class="text-6xl font-semibold text-white my-4">
+            <h2 class="text-6xl font-semibold text-white outlined-text my-4">
                 {{ video_destaque.titulo }}
             </h2>
             <p class=" w-11/12 md:w-5/12 font-medium text-white my-4">
@@ -96,7 +107,7 @@ Homevideos VideoFlix
             </p>
             <div class="flex my-4">
                 <a href="{% url 'video:detalhesvideos' video_destaque.pk %}">
-                    <button class="flex items-center bg-white py-2 px-5 rounded-md" style='color:black;'>
+                    <button class="flex items-center bg-white py-2 px-5 rounded-md custom-button" style='color:black;'>
                         <ion-icon name="play" class="text-2xl"></ion-icon>
                         <span class="ml-3 font-medium " >
                             Play
@@ -121,6 +132,7 @@ Homevideos VideoFlix
                           <div class="item h-64 w-1/4 m-4">
                               <a href="{% url 'video:detalhesvideos' filme.pk %}">
                                 <img src="{{ filme.thumb.url }}" class="rounded-md w-full h-full object-cover">
+                                <p>{{ filme.titulo }}</p>
                               </a>
                           </div>
                       {% endif %}
@@ -135,6 +147,7 @@ Homevideos VideoFlix
                           <div class="item h-64 w-1/4 m-4">
                               <a href="{% url 'video:detalhesvideos' filme.pk %}">
                                 <img src="{{ filme.thumb.url }}" class="rounded-md w-full h-full object-cover">
+                                <p>{{ filme.titulo }}</p>
                               </a>
                           </div>
                         {% endif %}
@@ -161,6 +174,7 @@ Homevideos VideoFlix
                           <div class="item h-64 w-1/4 m-4">
                               <a href="{% url 'video:detalhesvideos' filme.pk %}">
                                 <img src="{{ filme.thumb.url }}" class="rounded-md w-full h-full object-cover">
+                                <p>{{ filme.titulo }}</p>
                               </a>
                           </div>
                       {% endif %}
@@ -175,6 +189,7 @@ Homevideos VideoFlix
                           <div class="item h-64 w-1/4 m-4">
                               <a href="{% url 'video:detalhesvideos' filme.pk %}">
                                 <img src="{{ filme.thumb.url }}" class="rounded-md w-full h-full object-cover">
+                                <p>{{ filme.titulo }}</p>
                               </a>
                           </div>
                         {% endif %}
@@ -188,6 +203,47 @@ Homevideos VideoFlix
         </div>
     </section>
 
+    <section class='bg-primary_black flex justify-center py-10'>
+        <div class="p-8 w-10/12 relative" >
+            <h2 class="text-gray-200 text-2xl font-medium">
+                Continuar Assistindo
+            </h2>
+            <div class="wrapper">
+              <section id="section1vistos" class="flex flex-nowrap items-center justify-center space-x-8">
+                <a href="#section2vistos" class="arrow__btn text-6xl page">‹</a>
+                  {% for  filme in request.user.filmes_vistos.all %}
+                      {% if forloop.counter < 5 %}
+                          <div class="item h-64 w-1/4 m-4">
+                              <a href="{% url 'video:detalhesvideos' filme.pk %}">
+                                <img src="{{ filme.thumb.url }}" class="rounded-md w-full h-full object-cover">
+                                <p>{{ filme.titulo }}</p>
+                              </a>
+                          </div>
+                      {% endif %}
+                  {% endfor %}
+                    <a href="#section2vistos" class="arrow__btn text-6xl">›</a>
+              </section>
+                {% if request.user.filmes_vistos.all|length > 4 %}
+                  <section id="section2vistos" class="flex flex-nowrap items-center justify-center">
+                    <a href="#section1vistos" class="arrow__btn text-6xl">‹</a>
+                      {% for  filme in request.user.filmes_vistos.all %}
+                        {% if forloop.counter > 4 %}
+                          <div class="item h-64 w-1/4 m-4">
+                              <a href="{% url 'video:detalhesvideos' filme.pk %}">
+                                <img src="{{ filme.thumb.url }}" class="rounded-md w-full h-full object-cover">
+                                <p>{{ filme.titulo }}</p>
+                              </a>
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    <a href="#section1vistos" class="arrow__btn text-6xl">›</a>
+                  </section>
+                {% endif %}
+            </div>
+
+
+        </div>
+    </section>
 </main>
 
 {% endblock %}
