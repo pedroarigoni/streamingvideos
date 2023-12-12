@@ -47,3 +47,8 @@ class PesquisaVideo(LoginRequiredMixin, ListView):
             return object_list
         else:
             return None
+class EditarPerfil(LoginRequiredMixin, TemplateView):
+    template_name = "editarperfil.html"
+
+class CriarConta(TemplateView):
+    template_name = "criarconta.html"
