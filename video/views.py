@@ -2,7 +2,8 @@ from django.shortcuts import redirect, reverse
 from .models import Filme, Usuario
 from .forms import CriarContaForm, FormHomepage
 from django.views.generic import TemplateView, ListView, DetailView, FormView, UpdateView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+
 
 # Create your views here.
 class HomePage(FormView):
@@ -57,10 +58,14 @@ class PesquisaVideo(LoginRequiredMixin, ListView):
             return object_list
         else:
             return None
-class EditarPerfil(LoginRequiredMixin, UpdateView):
+class EditarPerfil(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     template_name = "editarperfil.html"
     model = Usuario
     fields = ["first_name", "last_name", "email"]
+
+    def test_func(self):
+        user = self.get_object()
+        return self.request.user == user
 
     def get_success_url(self):
         return reverse("video:homevideos")
