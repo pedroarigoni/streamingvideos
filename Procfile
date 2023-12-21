@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn video.wsgi --log-file -
+web: python manage.py migrate && gunicorn streamingvideos.wsgi --log-file -
