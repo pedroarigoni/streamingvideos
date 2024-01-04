@@ -1,3 +1,5 @@
+import math
+
 from .models import Filme
 
 def lista_videos_recentes(request):
@@ -15,3 +17,7 @@ def video_destaque(request):
         return {"video_destaque": video}
     else:
         return {"video_destaque": None}
+
+def lista_todos(request):
+    filmes = Filme.objects.all().order_by("titulo")
+    return {"lista_todos_filmes": filmes}

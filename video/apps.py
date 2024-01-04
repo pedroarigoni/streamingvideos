@@ -14,6 +14,8 @@ class VideoConfig(AppConfig):
 
         usuarios = Usuario.objects.filter(email=email)
         if not usuarios:
+            if os.environ.get('ENV') != 'producao':
+                return
             Usuario.objects.create_superuser(
                 username='admin',
                 email=email,

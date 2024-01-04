@@ -4,6 +4,8 @@ from .forms import CriarContaForm, FormHomepage
 from django.views.generic import TemplateView, ListView, DetailView, FormView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
+from .new_context import lista_todos
+
 
 # Create your views here.
 class HomePage(FormView):
@@ -28,6 +30,11 @@ class HomePage(FormView):
 class HomeVideos(LoginRequiredMixin, ListView):
     template_name = "homevideos.html"
     model = Filme
+
+    def get_context_data(self, **kwargs):
+        context = super(HomeVideos, self).get_context_data(**kwargs)
+        context.update(lista_todos(self.request))  # Add the 'lista_todos_filmes' to the context
+        return context
 
 class DetalhesVideos(LoginRequiredMixin, DetailView):
     template_name = "detalhesvideo.html"
