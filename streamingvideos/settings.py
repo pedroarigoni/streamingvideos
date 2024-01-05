@@ -30,7 +30,7 @@ else:
     SECRET_KEY = 'django-insecure-7mbb_z)b*jvcgi0@d&h^klo0o(5&jjuz1m6ts1!qc31w9gsc=!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["streamingvideos-production.up.railway.app", "localhost", "127.0.0.1"]
 
