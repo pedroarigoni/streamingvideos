@@ -1,0 +1,269 @@
+[33mcommit ac479e89f21688bad32463d83d37e6867d55c021[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Jan 4 20:10:22 2024 -0300
+
+    added todos os videos to homevideos
+
+[33mcommit 4b9c89405622771dbc3811bc486a9a4e6239c898[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Jan 4 13:48:08 2024 -0300
+
+    configured online superuser
+
+[33mcommit 8261ec5ecce6704164c881429b99779ae4f57d31[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Jan 4 09:10:22 2024 -0300
+
+    configured update CSRF
+
+[33mcommit c74653ed87728afb9510c3818797e4a3857f7f5d[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Jan 4 09:07:56 2024 -0300
+
+    configured CSRF
+
+[33mcommit 4cf61c245fb25f15c64f7bc9f259f5b9403bf328[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 12:14:04 2023 -0300
+
+    deploy v1.6
+
+[33mcommit ed0cebce1c57f7c047e80cf7ce22816bbeff8bc7[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 12:09:47 2023 -0300
+
+    deploy v1.6
+
+[33mcommit e3e5c94f7e7d92658f740661b0a6fef37516fa22[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 12:08:19 2023 -0300
+
+    deploy v1.5
+
+[33mcommit 5f99768229a41e7259116f6b9afad8a88d4b35f2[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 12:06:22 2023 -0300
+
+    deploy v1.5
+
+[33mcommit 5b09fd19c340a44fba1186924a55256d6753a5a4[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 11:58:12 2023 -0300
+
+    deploy v1.4
+
+[33mcommit 88fd44ac2387c8d4440e4d3f890f99b210c0c431[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 11:52:02 2023 -0300
+
+    deploy v1.3
+
+[33mcommit dd2b4b05b62ae0ada1f5aebbc285b505ad8b1541[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 11:40:14 2023 -0300
+
+    deploy v1.2
+
+[33mcommit 550bbed28c139357a0f19176db3ff8ad02ac257b[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 11:30:46 2023 -0300
+
+    deploy v1.1
+
+[33mcommit a1f1830d09507abd030c1edd6769f4980d025b34[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 11:16:52 2023 -0300
+
+    Deploy
+
+[33mcommit 90c9451dd98aaaae91265edb896c8177c2b60b65[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 11:09:21 2023 -0300
+
+    deploy v1.0
+
+[33mcommit b0a36ae5e58afd655e9329ad5fcbbca306a12457[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 21 10:56:45 2023 -0300
+
+    pre deploy2
+
+[33mcommit 49f14b304388ee8f3b1c0eb5cae9629222a62011[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Wed Dec 13 16:15:09 2023 -0300
+
+    finalized pre deploy
+
+[33mcommit ced084718317501ff033c4ad45d97f1745e0d81a[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Wed Dec 13 15:07:10 2023 -0300
+
+    finalized
+
+[33mcommit ed8771932946a18ffd3cc42f9d47c8a00100db02[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Wed Dec 13 14:05:20 2023 -0300
+
+    Created and configured editar perfil/senha
+
+[33mcommit 822e658818d2cb11c017d5d3068774e251ab7ed6[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Wed Dec 13 12:58:15 2023 -0300
+
+    Configured homepage form for access
+
+[33mcommit f8b4e04df40c61bd6a565ce07f0ecce1440bc5d0[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Wed Dec 13 11:23:40 2023 -0300
+
+    created and configured form Criar Conta
+
+[33mcommit 9bcd9c01258f1898e5eb389158ed7d1ac93f5039[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Tue Dec 12 09:44:29 2023 -0300
+
+    created and configured login and logout pages and logic
+
+[33mcommit 5ba4acd31a0a1eeabad59cb2b185bf84344c1453[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Mon Dec 11 11:58:41 2023 -0300
+
+    configured the rediretings for authenticated and no authenticated users
+
+[33mcommit 9a69d46c4ecb34fc7fbbdd20c7dd796542939956[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Mon Dec 11 11:26:56 2023 -0300
+
+    created Login and Logout structure
+
+[33mcommit 63bd60a308f71ed9ecdf34a1072e8564be8e792a[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Mon Dec 11 10:45:03 2023 -0300
+
+    created Continuar Assistindo in HomeVideo
+
+[33mcommit e57a4c0a27673d6a85f64001cdcdee8ffd26aa36[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Fri Dec 8 16:16:39 2023 -0300
+
+    created custom user
+
+[33mcommit 8f359c9f5a9a8338be89825a5996d2cc2e0232fb[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 7 12:47:36 2023 -0300
+
+    configured pesquisa/
+
+[33mcommit fe7ab733a9cfca05125164923491316e7276c87a[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 7 11:23:14 2023 -0300
+
+    configured navbar
+
+[33mcommit 815df3ba194a9cecbbff89eb300fb10f91870bb5[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 7 11:13:09 2023 -0300
+
+    configured video_destaque
+
+[33mcommit ad203cbb6053c785732b436f04a5ce8fa818e908[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Dec 7 10:58:20 2023 -0300
+
+    created carousel for homevideos
+
+[33mcommit a83720d87a8ff63e1d78817304cfe05512e5ee53[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Wed Dec 6 09:53:20 2023 -0300
+
+    created template HomeVideos
+
+[33mcommit 3ae1a6a2da7dd9aa6634eafede94687f00007a34[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Wed Dec 6 09:25:25 2023 -0300
+
+    created the logic to sum visualizacoes
+
+[33mcommit b5ecc37ae6d5d2bff6788a2e3734834816ef71bb[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Wed Dec 6 08:59:31 2023 -0300
+
+    created Vídeos novos e mais assitidos na HomeVideo
+
+[33mcommit 04f2796d78a93979608fa8c3475b8fe834b1452b[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Tue Dec 5 21:51:06 2023 -0300
+
+    created the exibition for views Vídeos Relacionados
+
+[33mcommit 6d2abe8c228d5816f9763b08d981ca517fc7ccf8[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Tue Dec 5 21:07:32 2023 -0300
+
+    created the exibition for views DetalhesVideo
+
+[33mcommit 9acd09ce1800e305c8c0cd906137e32a5e28974e[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Tue Dec 5 15:52:53 2023 -0300
+
+    created and configured table Episodio
+
+[33mcommit 473feff18716d224240bd11be400c2fe05b4aa9d[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Tue Dec 5 15:26:53 2023 -0300
+
+    configured dynamic links for DetailView
+
+[33mcommit 861e02375343b05a7dfdd16d25dfc6b6193c45cd[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Tue Dec 5 14:47:53 2023 -0300
+
+    created DetailView
+
+[33mcommit 12f0ffca65283ba0b956578c24d78fee6a13254f[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Fri Dec 1 16:32:45 2023 -0300
+
+    created and configured  homevideos html
+
+[33mcommit 1f010d19a321e80ad39b9ebca8f0896a2fa1be17[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Fri Dec 1 15:29:12 2023 -0300
+
+    created homepage html
+
+[33mcommit 97debfe3a958aa5cff468e180a6042c85a96544f[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Nov 30 16:33:34 2023 -0300
+
+    created and configured homepage
+
+[33mcommit 6ecf6c03e47d1174f5dd282d03de7b745cdde4ba[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Nov 30 16:15:45 2023 -0300
+
+    created and configured db Filme, static and media
+
+[33mcommit 05d125c40ef067e044a62f63fc41042282da7cad[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Nov 30 15:06:38 2023 -0300
+
+    installed app video on project
+
+[33mcommit 9dc7b3a9a6492e392f9e776ff0432957d763dd96[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Nov 30 14:51:46 2023 -0300
+
+    created superuser
+
+[33mcommit 2e9fa7fe25c38b717d1aaa07874d055f59c9f086[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Nov 30 14:39:48 2023 -0300
+
+    created app video
+
+[33mcommit fbbefe1ca0ebeef5cdc1f97c5c22687c7f94dc1e[m
+Author: pedroargioni <pedroargioni@gmail.com>
+Date:   Thu Nov 30 14:34:48 2023 -0300
+
+    first commit
